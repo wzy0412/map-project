@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/canvas-map-tutorial.iml" filepath="$PROJECT_DIR$/canvas-map-tutorial.iml" />
+      <module fileurl="file://$PROJECT_DIR$/map-project.iml" filepath="$PROJECT_DIR$/map-project.iml" />
     </modules>
   </component>
 </project>

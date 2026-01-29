@@ -27,4 +27,10 @@ jobs:
               git pull origin main
             fi
             
-            echo "Deployment successful at $(date)" > deploy_log.txt
+            chmod +x mvnw
+            ./mvnw clean package -DskipTests
+            
+            fuser -k 8080/tcp || true
+            nohup java -Xmx512m -jar target/*.jar > app.log 2>&1 &
+            
+            echo "Deployment finished for Spring Boot."
