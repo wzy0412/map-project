@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Map Viewer</title>
+    <style>
+      body {font-family: sans-serif;display: flex;flex-direction: column; align-items: center;}
+      #map-container{position: relative;border: 2px solid #333;margin-top: 20px;}
+      canvas{display:block;}
+      .controls{background: #f4f4f4;padding:20px;border-radius: 8px;}
+    </style>
+</head>
+<body>
+<h2>Map Tile Viewer</h2>
+<div class="controls">
+  Lat: <input type="number" id="lat" value="51.5074" step="0.0001">
+  Lon: <input type="number" id="lon" value="-0.1278" step="0.0001">
+  Zoom: <input type="number" id="zoom" value="15" min="0" max="19">
+  <button onclick="renderMap()">Show Map</button>
+</div>
+<div id="map-container">
+  <canvas id="mapCanvas" width="512" height="512"></canvas>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
