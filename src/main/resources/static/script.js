@@ -3,7 +3,7 @@ async function renderMap(){
     const lon=document.getElementById('lon').value;
     const zoom=document.getElementById('zoom').value;
 
-    const response =await fetch('/convert?lat=${lat}&lon=${lon}&zoom=${zoom}');
+    const response =await fetch(`/convert?lat=${lat}&lon=${lon}&zoom=${zoom}`);
     const data =await response.json();
 
     const canvas= document.getElementById('mapCanvas');
