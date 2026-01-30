@@ -12,7 +12,7 @@ async function renderMap(){
     const canvas= document.getElementById('mapCanvas');
     const ctx=canvas.getContext('2d');
 
-    const tileUrl='https://tile.openstreetmap.org/${data.zoom}/${data.tileX}/${data.tileY}.png';
+    const tileUrl=`https://tile.openstreetmap.org/${data.zoom}/${data.tileX}/${data.tileY}.png`;
 
     const img=new Image();
     img.crossOrigin="Anonymous";
