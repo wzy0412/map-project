@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class MapController {
 
     @GetMapping("/hello")
-    public String Hello(){
+    public String hello(){
         return "Java Backend is Live in London";
     }
 }
